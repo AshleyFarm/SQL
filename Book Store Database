@@ -1,0 +1,48 @@
+/** BOOKS Title, Author, Genre, Reading Level, Price, Aisle
+Kingdom of Ash, Sarah J Maas, Fantasy, NA, 10, 3
+Throne of Glass, Sarah J Maas, Fantasy, YA, 15, 3
+Helter Skelter, Vincent Bugliosi, True Crime, NF, 8, 6
+A Court of Silver Flames, Sarah J Maas, Fantasy, NA, 5, 3
+Verity, Colleen Hoover, Thriller, NA, 7, 5
+Survive The Night, Riley Sager, Thriller, YA, 10, 5
+Sharp Objects, Gillian Flynn, Thriller, NA, 5, 5
+The Perfect Marriage, Jeneva Rose, Thriller, NA, 6, 5
+Baby Teeth, Zoje Stage, Thriller, NA, 7, 5
+Are You There Alone, Suzanne O'Malley, True Crime, NF, 5, 6
+No Exit, Taylor Adams, Thriller, NA, 10, 5
+A Court of Thorns and Roses, Sarah J Maas, Fantasy, NA, 5, 3
+Heir of Fire, Sarah J Mass, Fantasy, YA, 7, 3
+Layla, Colleen Hoover, Thriller, NA, 8, 5
+Crescent City, Sarah J Maas, Fantasy, NA, 12, 3
+**/
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, title TEXT, author TEXT, genre TEXT, level TEXT, price INTEGER, aisle INTEGER);
+
+INSERT INTO books VALUES (1, "Kingdom of Ash", "Sarah J Maas", "Fantasy", "NA", 10, 3);
+INSERT INTO books VALUES (2, "Throne of Glass", "Sarah J Maas", "Fantasy", "YA", 15, 3);
+INSERT INTO books VALUES (3, "Helter Skelter", "Vincent Bugliosi", "True Crime", "NF", 8, 6);
+INSERT INTO books VALUES (4, "A Court of Silver Flames", "Sarah J Maas", "Fantasy", "NA", 5, 3);
+INSERT INTO books VALUES (5, "Verity", "Colleen Hoover", "Thriller", "NA", 7, 5);
+INSERT INTO books VALUES (6, "Survive The Night", "Riley Sager", "Thriller", "YA", 10, 5);
+INSERT INTO books VALUES (7, "Sharp Objects", "Gillian Flynn", "Thriller", "NA", 5, 5);
+INSERT INTO books VALUES (8, "The Perfect Marriage", "Jeneva Rose", "Thriller", "NA", 6, 5);
+INSERT INTO books VALUES (9, "Baby Teeth", "Zoje Stage", "Thriller", "NA", 7, 5);
+INSERT INTO books VALUES (10, "Are You There Alone", "Suzanne O'Malley", "True Crime", "NF", 5, 6);
+INSERT INTO books VALUES (11, "No Exit", "Taylor Adams", "Thriller", "NA", 10, 5);
+INSERT INTO books VALUES (12, "A Court of Thorns and Roses", "Sarah J Maas", "Fantasy", "NA", 5, 3);
+INSERT INTO books VALUES (13, "Heir of Fire", "Sarah J Maas", "Fantasy", "YA", 7, 3);
+INSERT INTO books VALUES (14, "Layla", "Colleen Hoover", "Thriller", "NA", 8, 5);
+INSERT INTO books VALUES (15, "Crescent City", "Sarah J Maas", "Fantasy", "NA", 12, 3);
+
+Select * from books;
+
+--Display the database ordered by PRICE
+SELECT * from books ORDER BY price;
+
+--Display  the database ordered by AISLE
+SELECT * from books ORDER BY aisle;
+
+--What is the average price of each genre
+SELECT genre, AVG(price) FROM books GROUP BY genre; 
+
+
