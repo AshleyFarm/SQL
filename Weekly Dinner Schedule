@@ -1,0 +1,234 @@
+I created this because my partner and I can never decide what to make for dinner and have a difficult time figuring out a weekly dinner plan. This has over 100 dinner
+options, listing the name, type of cuisine, and our perceived difficulty level (for actually making the dish). Every week, we have this pick 6 random dinners and that 
+is our dinner schedule for the week. 
+
+
+/* DINNER Name, Cuisine, Difficulty
+Alfredo, Italian, Easy
+Spaghetti, Italian, Easy
+Stuffed Shells, Italian, Medium
+Campfire Chicken, American, Hard
+French Dip, American, Easy
+Smothered Chicken, American, Medium
+Chicken Wings, American, Easy
+Chicken Parmesan, Italian, Hard
+Pizza, Italian, Easy
+Mississippi Roast, American, Easy
+Pot Roast, American, Easy
+Tater Tot Hotdish, American, Easy
+Spicy Rigatoni, Italian, Easy
+Tacos, Mexican, Easy
+Burritos, Mexican, Easy
+Lasagna, Italian, Medium 
+Burgers, American, Easy
+Beef and Broccoli, Chinese, Medium
+Instant Pot Garlic Parm Chicken, American, Easy
+Pizza Pasta, Italian, Easy
+Baked Ziti, Italian, Easy
+Meatball Hotdish, Italian, Hard
+Nonnie's Hotdish, American, Easy
+Beef Stroganoff, Russian, Easy
+Stuffing Hotdish, American, Easy
+Swedish Meatballs, Swedish, Easy
+Olive Garden Pasta, Italian, Easy
+Nachos, Mexican, Easy
+Baked Potato Bar, American, Easy
+Pulled Pork, American, Easy
+Turkey Roast, American, Easy
+Steak, American, Medium
+DIY Pizza, Italian, Easy
+Meatball Subs, Italian, Hard
+Italian Beef, Italian, Medium
+Open Face Hot Beef, American, Medium
+Tortellini, Italian, Easy
+Ravioli, Italian, Easy
+Chicken Nuggets, American, Easy
+Chicken Patties, American, Easy
+Snack Wraps, American, Easy
+Chicken Noodle Soup, American, Easy
+Loaded Potato Soup, American, Medium
+Quesadillas, Mexican, Medium
+Crunchwraps, Mexican, Medium
+Hamburger Helper, American, Easy
+Deli Sandwich Bar, American, Easy
+Tetrazzini, Italian, Medium
+Phillies, American, Easy
+Biscuits and Gravy, American, Easy
+Breakfast for Dinner, American, Easy
+Sliders, American, Easy
+Ramen, Japanese, Medium
+Homemade Mac, American, Medium
+Grilled Cheese Bake, American, Medium
+BLTs, American, Easy
+Spaghetti Boats, Italian, Medium
+Chicken Parm Pasta, Italian, Medium
+Breakfast Burritos, American, Easy
+Fried Chicken, American, Hard
+Chicken Strips with Gravy, American, Hard
+Fajitas, Mexican, Medium
+Sheet Pan Chicken, American, Easy
+Sheet Pan Pork Chops, American, Easy
+Pork Loin, American, Easy
+Peroigis, Polish, Medium
+Chimichangas, Mexican, Hard
+Taquitos, Mexican, Hard
+Ribs, American, Medium
+Patty Melts, American, Easy
+Chicken Cutlets, Italian, Medium
+Chicken Schnitzel, Austrian, Medium
+Pork Schnitzel, Austrian, Medium
+Crispy Chicken Thighs, American, Medium
+Twice Baked Potato Casserole, American, Easy
+Strombolis, Italian, Hard
+Calzones, Italian, Hard
+Cheesy Taco Pasta, Mexican, Easy
+Chicken and Dumplings, American, Medium
+Million Dollar Spaghetti, Italian, Easy
+Chicken Tortilla Bake, Mexican, Medium
+Mississippi Chicken, American, Easy
+Ortega Chicken Tacos, Mexican, Easy
+Taco Ring, Mexican, Medium
+Creamy Garlic Butter Chicken and Rice, American, Easy 
+Blackstone Hibachi, Japanese, Hard
+Loaded Italian Sausages, Italian, Easy
+Ritz Chicken, American, Medium
+Walking Tacos, Mexican, Easy
+Tater Tot Nachos, Mexican, Easy
+Gyros, Greek, Medium
+French Bread Pizzas, Italian, Easy
+Appetizer Night, American, Easy
+Cacio E Pepe, Italian, Easy
+Carbonara, Italian, Medium
+Soup and Sandwich, American, Easy
+Chuck Roast Tacos, Mexican, Easy
+KFC Bowls, American, Easy
+Quesaritos, Mexican, Hard
+Teriaki Stir Fry, Chinese, Easy
+Whole Chicken, American, Hard
+Spatchcock Chicken, American, Hard
+Coborn's Grillers, American, Easy
+Birria, Mexican, Hard
+Order Out, Any, Easy
+
+
+*/
+
+
+CREATE TABLE dinners (id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT, cuisine TEXT, difficulty TEXT);
+
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Alfredo", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Spaghetti", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Stuffed Shells", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Campfire Chicken", "American", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("French Dip", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Smothered Chicken", "American", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Wings", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Parmesan", "Italian", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Pizza", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Mississippi Roast", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Pot Roast", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Tater Tot Hotdish", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Spicy Rigatoni", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Tacos", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Burritos", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Lasagna", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Burgers", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Beef and Broccoli", "Chinese", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Instant Pot Garlic Parm Chicken", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Pizza Pasta", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Baked Ziti", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Meatball Hotdish", "Italian", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Nonnie's Hotdish", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Beef Stroganoff", "Russian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Stuffing Hotdish", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Swedish Meatballs", "Swedish", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Olive Garden Pasta", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Nachos", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Baked Potato Bar", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Pulled Pork", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Turkey Roast", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Steak", "American", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("DIY Pizza", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Meatball Subs", "Italian", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Italian Beef", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Open Face Hot Beef", "American", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Tortellini", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Ravioli", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Nuggets", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Patties", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Snack Wraps", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Noodle Soup", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Loaded Potato Soup", "American", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Quesadillas", "Mexican", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Crunchwraps", "Mexican", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Hamburger Helper", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Deli Sandwich Bar", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Tetrazzini", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Phillies", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Biscuits and Gravy", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Breakfast for Dinner", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Sliders", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Ramen", "Japanese", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Mac and Cheese", "American", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Grilled Cheese Bake", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("BLTs", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Spaghetti Boats", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Parm Pasta", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Breakfast Burritos", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Fried Chicken", "American", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Strips with Gravy", "American", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Fajitas", "Mexican", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Sheet Pan Chicken", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Sheet Pan Pork Chops", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Pork Loin", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Peroigies", "Polish", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chimichangas", "Mexican", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Taquitos", "Mexican", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Ribs", "American", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Patty Melts", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Cutlets", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Schnitzel", "Austrian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Pork Schnitzel", "Austrian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Crispy Chicken Thighs", "American", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Twice Baked Potato Hotdish", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Strombolis", "Italian", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Calzones", "Italian", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Cheesy Taco Pasta", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken and Dumplings", "American", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Million Dollar Spaghetti", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chicken Tortilla Bake", "Mexican", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Mississippi Chicken", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Ortega Chicken Tacos", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Taco Ring", "Mexican", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Creamy Garlic Butter Chicken and Rice", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Blackstone Hibachi", "Japanese", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Loaded Sausages", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Ritz Chicken", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Walking Tacos", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Tater Tot Nachos", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Gyros", "Greek", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("French Bread Pizza", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Appetizer Night", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Cacio E Pepe", "Italian", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Carbonara", "Italian", "Medium");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Soup and Sandwich", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Chuck Roast Tacos", "Mexican", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("KFC Bowls", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Quesaritos", "Mexican", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Teriaki Stir Fry", "Chinese", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Whole Chicken", "American", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Spatchcock Chicken", "American", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Coborns Grillers", "American", "Easy");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Birria", "Mexican", "Hard");
+INSERT INTO dinners (name, cuisine, difficulty) VALUES ("Order Out", "Any", "Easy");
+
+SELECT * FROM dinners;
+
+-- To find easy dinners
+SELECT name, difficulty FROM dinners WHERE difficulty = "Easy";
+
+-- Pick 6 random dinners for each week, Sunday is leftovers/ order in day
+SELECT name, cuisine, difficulty FROM dinners
+ORDER BY RANDOM()
+LIMIT 6;
